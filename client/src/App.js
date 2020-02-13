@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 class App extends Component {
 
@@ -22,12 +20,12 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
-					<p>
-						{ this.state.apiResponse }
-					</p>
-				</header>
+				<p>
+					{ this.state.apiResponse }
+				</p>
+				<a href="http://localhost:9011/oauth2/authorize?client_id=656c1aaf-bf79-4538-bc36-854aace7de58&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Foauth-redirect">
+					login
+				</a>
 			</div>
 		);
 	}
