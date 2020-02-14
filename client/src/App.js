@@ -10,7 +10,7 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		fetch('http://localhost:9000/testAPI')
+		fetch('http://localhost:9000/profile')
 			.then(response => response.text())
 			.then(test => this.setState({
 				apiResponse: test
@@ -23,7 +23,7 @@ class App extends Component {
 				<p>
 					{ this.state.apiResponse }
 				</p>
-				<a href="http://localhost:9011/oauth2/authorize?client_id=656c1aaf-bf79-4538-bc36-854aace7de58&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Foauth-redirect">
+				<a href="http://localhost:9011/oauth2/authorize?client_id=ce8b4b31-f7f9-48d5-bbb1-5ced1720340f&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Foauth-redirect">
 					login
 				</a>
 			</div>
